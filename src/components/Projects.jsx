@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, Filter, Smartphone, Globe, Database, Code } from 'lucide-react';
-import { getProjects } from '../firebase/firestore';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -10,13 +9,11 @@ const Projects = () => {
     threshold: 0.1,
   });
 
-  const [projects, setProjects] = useState([]);
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [activeFilter, setActiveFilter] = useState('all');
-  const [loading, setLoading] = useState(true);
 
-  // Sample projects data (fallback if Firebase is not configured)
-  const sampleProjects = [
+  // Static projects data
+  const projects = [
     {
       id: 1,
       title: 'E-Commerce Web App',
@@ -75,9 +72,9 @@ const Projects = () => {
     {
       id: 6,
       title: 'Portfolio Website',
-      description: 'This very website! A dynamic portfolio with 3D elements, animations, and Firebase integration.',
+      description: 'This very website! A dynamic portfolio with 3D elements, animations, and modern web technologies.',
       image: '/api/placeholder/400/250',
-      technologies: ['React', 'Three.js', 'Firebase', 'Framer Motion'],
+      technologies: ['React', 'Three.js', 'Framer Motion', 'Tailwind CSS'],
       category: 'web',
       github: 'https://github.com/Durafshaan/portfolio',
       demo: 'https://durafshaan.dev',
@@ -93,27 +90,8 @@ const Projects = () => {
   ];
 
   useEffect(() => {
-    const loadProjects = async () => {
-      try {
-        const result = await getProjects();
-        if (result.success && result.data.length > 0) {
-          setProjects(result.data);
-          setFilteredProjects(result.data);
-        } else {
-          // Use sample data if Firebase is not configured or empty
-          setProjects(sampleProjects);
-          setFilteredProjects(sampleProjects);
-        }
-      } catch (error) {
-        console.log('Using sample projects data');
-        setProjects(sampleProjects);
-        setFilteredProjects(sampleProjects);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadProjects();
+    // Initialize with all projects
+    setFilteredProjects(projects);
   }, []);
 
   const handleFilterChange = (filterId) => {
@@ -201,23 +179,6 @@ const Projects = () => {
       </div>
     </motion.div>
   );
-
-  if (loading) {
-    return (
-      <section className="section-padding bg-dark-800/50">
-        <div className="container-custom">
-          <div className="text-center">
-            <div className="loading-dots">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="section-padding bg-dark-800/50" ref={ref}>
@@ -327,4 +288,3 @@ const Projects = () => {
 };
 
 export default Projects;
-

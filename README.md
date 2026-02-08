@@ -1,25 +1,24 @@
 # Durafshaan's Dynamic Portfolio Website
 
-A modern, interactive portfolio website built with React, Three.js, Firebase, and Framer Motion. Features 3D animations, smooth transitions, and a dynamic backend for content management.
+A modern, interactive portfolio website built with React, Three.js, and Framer Motion. Features stunning 3D animations, smooth transitions, and a responsive design showcasing development skills.
 
 ## 🚀 Features
 
 - **3D Interactive Elements**: Powered by Three.js and React Three Fiber
 - **Smooth Animations**: Beautiful transitions using Framer Motion
-- **Firebase Backend**: Real-time data storage and contact form handling
+- **Contact Form**: Email integration using mailto links
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 - **Modern Tech Stack**: React 18, Vite, and modern JavaScript
-- **Performance Optimized**: Lazy loading, code splitting, and optimized assets
+- **Performance Optimized**: Lightweight, fast-loading frontend-only architecture
 
 ## 🛠️ Technologies Used
 
 - **Frontend**: React 18, Vite, Tailwind CSS
 - **3D Graphics**: Three.js, React Three Fiber, React Three Drei
 - **Animations**: Framer Motion
-- **Backend**: Firebase (Firestore, Storage, Hosting)
 - **Icons**: Lucide React
 - **Form Handling**: React Hook Form
-- **Deployment**: Firebase Hosting
+- **Deployment**: Static hosting (Vercel, Netlify, GitHub Pages)
 
 ## 📦 Installation
 
@@ -34,38 +33,10 @@ A modern, interactive portfolio website built with React, Three.js, Firebase, an
    npm install
    ```
 
-3. **Firebase Setup**
-   - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
-   - Enable Firestore Database, Storage, and Hosting
-   - Copy your Firebase config and update `src/firebase/config.js`
-   - Install Firebase CLI: `npm install -g firebase-tools`
-   - Login to Firebase: `firebase login`
-   - Initialize Firebase: `firebase init`
-
-4. **Environment Setup**
-   - Update Firebase configuration in `src/firebase/config.js`
-   - Replace placeholder values with your actual Firebase config
-
-5. **Start development server**
+3. **Start development server**
    ```bash
    npm run dev
    ```
-
-## 🔧 Firebase Configuration
-
-Update the Firebase configuration in `src/firebase/config.js`:
-
-```javascript
-const firebaseConfig = {
-  apiKey: "your-api-key",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "your-app-id",
-  measurementId: "your-measurement-id"
-};
-```
 
 ## 🚀 Deployment
 
@@ -74,10 +45,10 @@ const firebaseConfig = {
    npm run build
    ```
 
-2. **Deploy to Firebase Hosting**
-   ```bash
-   firebase deploy
-   ```
+2. **Deploy to static hosting**
+   - **Vercel**: Connect your GitHub repo and deploy automatically
+   - **Netlify**: Drag and drop the `dist` folder or connect via Git
+   - **GitHub Pages**: Use GitHub Actions to deploy the `dist` folder
 
 ## 📁 Project Structure
 
@@ -92,9 +63,7 @@ src/
 │   ├── Contact.jsx     # Contact form
 │   ├── ThreeScene.jsx  # 3D scene components
 │   └── LoadingScreen.jsx
-├── firebase/           # Firebase configuration
-│   ├── config.js       # Firebase setup
-│   └── firestore.js    # Database operations
+
 ├── hooks/              # Custom React hooks
 ├── utils/              # Utility functions
 ├── assets/             # Static assets
@@ -109,7 +78,7 @@ src/
 ### Adding Your Own Images
 1. Place your images in `src/assets/images/`
 2. Update the image references in components
-3. For Firebase Storage, upload images through the Firebase Console
+3. Optimize images for web (WebP format recommended)
 
 ### Modifying Content
 - **About Section**: Edit `src/components/About.jsx`
@@ -172,4 +141,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 Built with ❤️ by Durafshaan Malik using modern web technologies.
-

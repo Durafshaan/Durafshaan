@@ -7,27 +7,11 @@ import Projects from './components/Projects';
 import Timeline from './components/Timeline';
 import Contact from './components/Contact';
 import LoadingScreen from './components/LoadingScreen';
-import { trackVisitor } from './firebase/firestore';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Track visitor
-    const trackUserVisit = async () => {
-      try {
-        await trackVisitor({
-          userAgent: navigator.userAgent,
-          timestamp: new Date(),
-          referrer: document.referrer || 'direct'
-        });
-      } catch (error) {
-        console.log('Visitor tracking failed:', error);
-      }
-    };
-
-    trackUserVisit();
-
     // Simulate loading time for 3D assets and animations
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -84,4 +68,3 @@ function App() {
 }
 
 export default App;
-

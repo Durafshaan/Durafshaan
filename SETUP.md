@@ -1,13 +1,12 @@
 # Setup Guide for Durafshaan's Portfolio Website
 
-This guide will help you set up and customize the dynamic portfolio website.
+This guide will help you set up and customize the modern frontend portfolio website.
 
 ## 🚀 Quick Start
 
 ### 1. Prerequisites
 - Node.js (v16 or higher)
 - npm or yarn
-- Firebase account
 - Git
 
 ### 2. Installation Steps
@@ -20,64 +19,13 @@ cd Durafshaan
 # Install dependencies
 npm install
 
-# Copy environment file
-cp .env.example .env
-
 # Start development server
 npm run dev
 ```
 
-## 🔧 Firebase Setup
-
-### Step 1: Create Firebase Project
-1. Go to [Firebase Console](https://console.firebase.google.com/)
-2. Click "Create a project"
-3. Enter project name (e.g., "durafshaan-portfolio")
-4. Enable Google Analytics (optional)
-5. Create project
-
-### Step 2: Enable Firebase Services
-1. **Firestore Database**:
-   - Go to Firestore Database
-   - Click "Create database"
-   - Start in test mode
-   - Choose location
-
-2. **Storage**:
-   - Go to Storage
-   - Click "Get started"
-   - Start in test mode
-
-3. **Hosting**:
-   - Go to Hosting
-   - Click "Get started"
-   - Follow setup instructions
-
-### Step 3: Get Firebase Configuration
-1. Go to Project Settings (gear icon)
-2. Scroll down to "Your apps"
-3. Click "Add app" → Web app
-4. Register app with nickname
-5. Copy the configuration object
-
-### Step 4: Update Configuration
-Update `src/firebase/config.js` with your Firebase config:
-
-```javascript
-const firebaseConfig = {
-  apiKey: "your-actual-api-key",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "your-app-id",
-  measurementId: "your-measurement-id"
-};
-```
-
 ## 🎨 Customization Guide
 
-### Personal Information
+### Step 1: Personal Information
 Edit the following files to add your personal information:
 
 1. **About Section** (`src/components/About.jsx`):
@@ -258,4 +206,3 @@ After setup, consider:
 ---
 
 Need help? Check the main README.md or create an issue on GitHub!
-

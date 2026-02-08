@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Github, Linkedin, Send, CheckCircle, AlertCircle, MapPin, Clock } from 'lucide-react';
-import { submitContactForm } from '../firebase/firestore';
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -26,25 +25,27 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    try {
-      const result = await submitContactForm(formData);
-      if (result.success) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Form submission error:', error);
-      setSubmitStatus('error');
-    } finally {
+    // Create mailto link with form data
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Hi Durafshaan,\n\nName: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}\n\nBest regards,\n${formData.name}`
+    );
+    const mailtoLink = `mailto:durafshaan@example.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Show success message and reset form
+    setTimeout(() => {
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
       setIsSubmitting(false);
-    }
+    }, 1000);
   };
 
   const contactInfo = [
@@ -295,7 +296,7 @@ const Contact = () => {
           className="text-center mt-16 pt-8 border-t border-gray-700"
         >
           <p className="text-gray-400">
-            © 2024 Durafshaan Malik. Built with React, Three.js, and Firebase.
+            © 2024 Durafshaan Malik. Built with React, Three.js, and modern web technologies.
           </p>
           <p className="text-gray-500 text-sm mt-2">
             Designed and developed with ❤️ for the developer community.
@@ -307,4 +308,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
