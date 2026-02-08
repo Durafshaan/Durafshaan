@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durafshaan's Portfolio - Live Preview</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .status {
+            display: inline-block;
+            background: #4ade80;
+            color: #065f46;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .preview-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .preview-card h3 {
+            margin-top: 0;
+            color: #4ecdc4;
+            font-size: 1.3rem;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .feature-list li:before {
+            content: "✨ ";
+            margin-right: 8px;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .live-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .live-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            margin: 10px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        .live-link:hover {
+            transform: translateY(-3px);
+        }
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+            border-left: 4px solid #4ecdc4;
+        }
+        .code-block {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🚀 Your Portfolio is Live!</h1>
+            <p class="subtitle">Modern, Interactive, and Ready to Impress</p>
+            <div class="status">✅ FULLY OPERATIONAL</div>
+        </div>
+
+        <div class="preview-grid">
+            <div class="preview-card">
+                <h3>🎨 Visual Features</h3>
+                <ul class="feature-list">
+                    <li>Interactive 3D Hero Section</li>
+                    <li>Smooth Framer Motion Animations</li>
+                    <li>Responsive Mobile-First Design</li>
+                    <li>Particle Effects & 3D Spheres</li>
+                    <li>Glass-morphism UI Elements</li>
+                    <li>Gradient Text & Hover Effects</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h3>⚡ Technical Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">React 18</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">Three.js</span>
+                    <span class="tech-tag">Framer Motion</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">TypeScript Ready</span>
+                </div>
+            </div>
+
+            <div class="preview-card">
+                <h3>📱 Sections Included</h3>
+                <ul class="feature-list">
+                    <li>3D Animated Hero</li>
+                    <li>About & Skills Showcase</li>
+                    <li>Interactive Timeline</li>
+                    <li>Projects Gallery</li>
+                    <li>Contact Form (No Phone/Instagram)</li>
+                    <li>Loading Screen</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h3>🔥 Firebase Backend</h3>
+                <ul class="feature-list">
+                    <li>Firestore Database</li>
+                    <li>Contact Form Submissions</li>
+                    <li>Project Data Management</li>
+                    <li>Visitor Analytics</li>
+                    <li>Security Rules Configured</li>
+                    <li>Hosting Ready</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="live-links">
+            <a href="http://172.20.0.230:3001/" class="live-link" target="_blank">
+                🔥 Development Server
+            </a>
+            <a href="http://172.20.0.230:4000/" class="live-link" target="_blank">
+                🚀 Production Preview
+            </a>
+        </div>
+
+        <div class="instructions">
+            <h3>🛠️ Next Steps to Customize:</h3>
+            
+            <p><strong>1. Configure Firebase:</strong></p>
+            <div class="code-block">
+                # Update src/firebase/config.js with your Firebase project details
+                # Create Firebase project at console.firebase.google.com
+            </div>
+
+            <p><strong>2. Add Your Images:</strong></p>
+            <div class="code-block">
+                # Place your photos in src/assets/images/
+                # Update image references in components
+            </div>
+
+            <p><strong>3. Customize Content:</strong></p>
+            <div class="code-block">
+                # Edit src/components/About.jsx - Your skills & info
+                # Edit src/components/Projects.jsx - Your projects
+                # Edit src/components/Timeline.jsx - Your journey
+                # Edit src/components/Contact.jsx - Your contact details
+            </div>
+
+            <p><strong>4. Deploy:</strong></p>
+            <div class="code-block">
+                npm run build
+                firebase deploy
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; opacity: 0.8;">
+            <p>🎉 Your portfolio showcases modern web development skills with cutting-edge technologies!</p>
+            <p>Perfect for demonstrating your expertise in React, 3D graphics, and full-stack development.</p>
+        </div>
+    </div>
+</body>
+</html>
