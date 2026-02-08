@@ -94,4 +94,20 @@
     <string name="gregorian_date">Gregorian Date</string>
     <string name="no_events_today">No events today</string>
     <string name="events_for_date">Events for %1$s</string>
+    <string name="islamic_calendar">Islamic Calendar</string>
+    
+    <!-- Azan Times -->
+    <string name="azan_times">Azan Times</string>
+    <string name="fajr_azan">Fajr Azan</string>
+    <string name="dhuhr_azan">Dhuhr Azan</string>
+    <string name="asr_azan">Asr Azan</string>
+    <string name="maghrib_azan">Maghrib Azan</string>
+    <string name="isha_azan">Isha Azan</string>
+    
+    <!-- Additional Settings -->
+    <string name="silent_mode_settings">Silent Mode Settings</string>
+    <string name="silent_duration">Silent Duration (minutes before prayer)</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="prayer_time_settings">Prayer Time Settings</string>
+    <string name="save_settings">Save Settings</string>
 </resources>
