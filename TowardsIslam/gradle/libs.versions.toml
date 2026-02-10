@@ -1,30 +1,30 @@
 [versions]
-agp = "8.5.2"
-kotlin = "1.9.25"
-coreKtx = "1.13.1"
+agp = "8.3.2"
+kotlin = "1.9.10"
+coreKtx = "1.12.0"
 junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
-lifecycleRuntimeKtx = "2.8.4"
-activityCompose = "1.9.1"
-composeBom = "2024.06.00"
-appcompat = "1.7.0"
-material = "1.12.0"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.8.2"
+composeBom = "2024.02.02"
+appcompat = "1.6.1"
+material = "1.11.0"
 hilt = "2.48"
-hiltNavigationCompose = "1.2.0"
+hiltNavigationCompose = "1.1.0"
 room = "2.6.1"
 retrofit = "2.9.0"
 okhttp = "4.12.0"
 gson = "2.10.1"
 coroutines = "1.7.3"
-navigation = "2.7.7"
-workManager = "2.9.1"
-datastore = "1.1.1"
+navigation = "2.7.6"
+workManager = "2.9.0"
+datastore = "1.0.0"
 exoplayer = "2.19.1"
 accompanist = "0.32.0"
 splashScreen = "1.0.1"
-material3 = "1.2.1"
-compose = "1.6.8"
+material3 = "1.2.0"
+compose = "1.5.8"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -51,8 +51,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
-androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version = "1.2.0" }
-androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version = "1.2.0" }
+androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version = "1.1.0" }
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version = "1.1.0" }
 
 # Room
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
