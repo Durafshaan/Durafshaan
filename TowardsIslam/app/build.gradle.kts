@@ -58,14 +58,6 @@ android {
     }
 }
 
-// Fix for AGP 8.7.3 debugRuntimeClasspathCopy configuration issue
-configurations.all {
-    if (name.contains("RuntimeClasspathCopy")) {
-        isCanBeConsumed = false
-        isCanBeResolved = true
-    }
-}
-
 dependencies {
     // Core Android
     implementation(libs.androidx.core.ktx)
