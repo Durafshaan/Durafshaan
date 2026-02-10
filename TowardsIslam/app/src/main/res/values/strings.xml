@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Towards Islam</string>
+    
+    <!-- Prayer Names -->
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="qibla">Qibla</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Common Actions -->
+    <string name="refresh">Refresh</string>
+    <string name="retry">Retry</string>
+    <string name="back">Back</string>
+    
+    <!-- Prayer Times -->
+    <string name="next_prayer">Next Prayer</string>
+    <string name="todays_prayer_times">Today\'s Prayer Times</string>
+    
+    <!-- Location -->
+    <string name="current_location">Current Location</string>
+    <string name="unknown_location">Unknown Location</string>
+    
+    <!-- Settings -->
+    <string name="prayer_settings">Prayer Settings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="about">About</string>
+    
+    <!-- Hijri Calendar -->
+    <string name="islamic_calendar">Islamic Calendar</string>
+    <string name="today">Today</string>
+    
+    <!-- Qibla -->
+    <string name="qibla_direction">Qibla Direction</string>
+    
+    <!-- Error Messages -->
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="try_again">Try Again</string>
+</resources>
+

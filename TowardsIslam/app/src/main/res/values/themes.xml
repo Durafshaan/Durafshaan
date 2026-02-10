@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.TowardsIslam" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green40</item>
+        <item name="colorOnPrimary">@color/green100</item>
+        <item name="colorPrimaryContainer">@color/green90</item>
+        <item name="colorOnPrimaryContainer">@color/green10</item>
+        <item name="colorSecondary">@color/violet40</item>
+        <item name="colorOnSecondary">@color/violet100</item>
+        <item name="colorSecondaryContainer">@color/violet90</item>
+        <item name="colorOnSecondaryContainer">@color/violet10</item>
+        <item name="colorTertiary">@color/green_grey40</item>
+        <item name="colorOnTertiary">@color/green_grey100</item>
+        <item name="colorTertiaryContainer">@color/green_grey90</item>
+        <item name="colorOnTertiaryContainer">@color/green_grey10</item>
+        <item name="colorError">@color/red40</item>
+        <item name="colorOnError">@color/red100</item>
+        <item name="colorErrorContainer">@color/red90</item>
+        <item name="colorOnErrorContainer">@color/red10</item>
+        <item name="colorOutline">@color/neutral_variant50</item>
+        <item name="colorOutlineVariant">@color/neutral_variant80</item>
+        <item name="colorSurface">@color/neutral98</item>
+        <item name="colorOnSurface">@color/neutral10</item>
+        <item name="colorSurfaceVariant">@color/neutral_variant90</item>
+        <item name="colorOnSurfaceVariant">@color/neutral_variant30</item>
+        <item name="colorSurfaceContainer">@color/neutral94</item>
+        <item name="colorSurfaceContainerHigh">@color/neutral92</item>
+        <item name="colorSurfaceContainerHighest">@color/neutral90</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme.TowardsIslam" parent="Base.Theme.TowardsIslam" />
+
+    <style name="Theme.TowardsIslam.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/green40</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_mosque</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.TowardsIslam</item>
+    </style>
+</resources>
+
