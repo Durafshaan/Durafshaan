@@ -1,0 +1,16 @@
+# Default Azan Audio Placeholder
+
+This is a placeholder file for the default Azan audio.
+In a production app, this would be replaced with an actual audio file (e.g., default_azan.mp3).
+
+The audio file should be:
+- Format: MP3 or OGG
+- Duration: 2-5 minutes
+- Quality: High quality Islamic Azan recitation
+- Size: Optimized for mobile (< 5MB recommended)
+
+To add the actual audio file:
+1. Replace this file with default_azan.mp3
+2. Update the AzanService.kt to reference the correct resource
+3. Test audio playback functionality
+
