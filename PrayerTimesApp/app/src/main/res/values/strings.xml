@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prayer Times</string>
+    
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="prayer_times">Times</string>
+    <string name="calendar">Calendar</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Prayer Names -->
+    <string name="fajr">Fajr</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="sunrise">Sunrise</string>
+    
+    <!-- Common -->
+    <string name="next_prayer">Next Prayer</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    
+    <!-- Settings -->
+    <string name="enable_silent_mode">Enable Silent Mode</string>
+    <string name="silent_mode_duration">Silent Mode Duration (minutes before prayer)</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="enable_azan_sound">Enable Azan Sound</string>
+    <string name="azan_volume">Azan Volume</string>
+    <string name="enable_vibration">Enable Vibration</string>
+    <string name="auto_calculate_times">Auto Calculate Prayer Times</string>
+    <string name="calculation_method">Calculation Method</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    
+    <!-- Islamic Events -->
+    <string name="islamic_events">Islamic Events</string>
+    <string name="add_event">Add Event</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_description">Event Description</string>
+    <string name="important_event">Important Event</string>
+    <string name="recurring_event">Recurring Event</string>
+    <string name="event_type">Event Type</string>
+    
+    <!-- Event Types -->
+    <string name="general">General</string>
+    <string name="eid">Eid</string>
+    <string name="ramadan">Ramadan</string>
+    <string name="hajj">Hajj</string>
+    <string name="friday_prayer">Friday Prayer</string>
+    <string name="laylat_al_qadr">Laylat al-Qadr</string>
+    <string name="ashura">Ashura</string>
+    <string name="mawlid">Mawlid</string>
+    
+    <!-- Calculation Methods -->
+    <string name="isna">ISNA (Islamic Society of North America)</string>
+    <string name="mwl">MWL (Muslim World League)</string>
+    <string name="egypt">Egyptian General Authority</string>
+    <string name="makkah">Umm Al-Qura University, Makkah</string>
+    <string name="karachi">University of Islamic Sciences, Karachi</string>
+    <string name="tehran">Institute of Geophysics, University of Tehran</string>
+    
+    <!-- Messages -->
+    <string name="prayer_time_updated">Prayer time updated successfully</string>
+    <string name="azan_time_updated">Azan time updated successfully</string>
+    <string name="event_added">Event added successfully</string>
+    <string name="settings_saved">Settings saved successfully</string>
+    <string name="permission_required">Permission required for this feature</string>
+    <string name="location_permission_required">Location permission required for auto calculation</string>
+    
+    <!-- Time Picker -->
+    <string name="select_time">Select Time</string>
+    <string name="set_prayer_time">Set Prayer Time</string>
+    <string name="set_azan_time">Set Azan Time</string>
+    
+    <!-- Notifications -->
+    <string name="prayer_notification_title">Prayer Time</string>
+    <string name="azan_notification_title">Azan Time</string>
+    <string name="silent_mode_enabled">Silent mode enabled for prayer</string>
+    <string name="silent_mode_disabled">Silent mode disabled</string>
+    
+    <!-- Calendar -->
+    <string name="hijri_date">Hijri Date</string>
+    <string name="gregorian_date">Gregorian Date</string>
+    <string name="no_events_today">No events today</string>
+    <string name="events_for_date">Events for %1$s</string>
+    <string name="islamic_calendar">Islamic Calendar</string>
+    
+    <!-- Azan Times -->
+    <string name="azan_times">Azan Times</string>
+    <string name="fajr_azan">Fajr Azan</string>
+    <string name="dhuhr_azan">Dhuhr Azan</string>
+    <string name="asr_azan">Asr Azan</string>
+    <string name="maghrib_azan">Maghrib Azan</string>
+    <string name="isha_azan">Isha Azan</string>
+    
+    <!-- Additional Settings -->
+    <string name="silent_mode_settings">Silent Mode Settings</string>
+    <string name="silent_duration">Silent Duration (minutes before prayer)</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="prayer_time_settings">Prayer Time Settings</string>
+    <string name="save_settings">Save Settings</string>
+</resources>
